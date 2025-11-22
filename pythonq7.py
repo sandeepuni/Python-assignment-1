@@ -19,6 +19,10 @@ purchased = {}
 free = {}
 discount = {}
 
+purchased = {}
+free = {}
+discount = {}
+
 def callfile(filename):
     with open(filename, "r") as file:
         line = file.readlines()
@@ -49,3 +53,4 @@ def callfile(filename):
     print(f"Final amount after discount : {finalvalue}")
 
 callfile("purchase-1.txt")
+callfile("purchase-2.txt")

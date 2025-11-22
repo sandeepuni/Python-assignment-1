@@ -23,7 +23,7 @@ while True:
             'basic salary': bsalary,
             'total salary': tsalary
         })
-    except ValueError:
+    except :
         print("Error: Please enter a valid salary!")
 print("Employee report")
 for i in employee:

@@ -20,14 +20,13 @@ while True:
         tsalary = bsalary+hra+da
         employee.append({
             'name': name,
-            'basic salary': bsalary,
+            'basic salary': bsalary
             'total salary': tsalary
         })
-    except :
+    except ValueError:
         print("Error: Please enter a valid salary!")
 print("Employee report")
 for i in employee:
     print(f"Employee: {i['name']}")
     print(f"Basic Salary: {i['basic salary']:.2f}")
-    print(f"Total Salary: {i['total
-    salary']:.2f}")
+    print(f"Total Salary: {i['total salary']:.2f}")

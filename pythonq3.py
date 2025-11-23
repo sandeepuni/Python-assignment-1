@@ -26,5 +26,5 @@ try :
       print("Grade : F")
   else :
     print("Please enter marks between 0 and 100")
-except :
+except ValuError:
   print("Please enter the information in the correct data type")

@@ -12,7 +12,7 @@ Concepts: Loops, recursion, functions, input validation.
 def factorial(n):
     try:
         n = int(n)
-    except:
+    except ValueError:
         print("Please enter the correct data type")
         return
     if n < 0:
@@ -31,7 +31,7 @@ def factorial(n):
 def is_prime(n):
     try:
         n = int(n)
-    except:
+    except ValueError:
         print("Please enter the correct data type")
         return
     if n < 0:
@@ -51,7 +51,7 @@ def gcd(a, b):
     try:
         a = int(a)
         b = int(b)
-    except:
+    except ValueError:
         print("Please enter the correct data type")
         return
     if a < 0 or b < 0:
